@@ -14,7 +14,7 @@
 
 - [x] shallowEquals 구현 완료
 - [x] deepEquals 구현 완료
-- [ ] memo 구현 완료
+- [x] memo 구현 완료
 - [ ] deepMemo 구현 완료
 - [ ] useRef 구현 완료
 - [ ] useMemo 구현 완료
