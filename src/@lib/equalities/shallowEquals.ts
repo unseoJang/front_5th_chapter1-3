@@ -17,7 +17,7 @@ export function shallowEquals<T>(objA: T, objB: T): boolean {
   if (objA === objB) {
     return true;
   }
-
+  // 2. 둘중 하나라도 객체가 아닌 경우 처리 함수
   const isObject = (obj: unknown): obj is Record<string, unknown> => {
     return obj !== null && typeof obj === "object";
   };
