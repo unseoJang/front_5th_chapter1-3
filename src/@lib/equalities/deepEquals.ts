@@ -37,7 +37,7 @@ export function deepEquals<T>(objA: T, objB: T): boolean {
       return false;
     }
     // - 재귀적으로 각 속성에 대해 deepEquals 호출
-    return entriesA.every(([key, value]) => {
+    return entriesA.every(([key, value]: [string, unknown]) => {
       return (
         Object.prototype.hasOwnProperty.call(objB, key) &&
         deepEquals(value, objB[key])
