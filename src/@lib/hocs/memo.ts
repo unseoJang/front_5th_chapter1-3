@@ -22,7 +22,7 @@ export function memo<P extends object>(
   let memoizedResult: React.ReactElement | null = null;
 
   // 2. 메모이제이션된 컴포넌트 생성 및 반환
-  return function MemoizedComponent(props: P) {
+  return function MemoizedComponent(props: P): React.ReactElement | null {
     // 2-1. equals 함수를 사용하여 props 비교
     if (prevProps === null || !equals(prevProps, props)) {
       memoizedResult = React.createElement(Component, props);
