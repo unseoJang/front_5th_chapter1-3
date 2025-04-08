@@ -6,6 +6,11 @@ export interface NotificationContextType {
   removeNotification: (id: number) => void;
 }
 
+/**
+ * NotificationContextType
+ * @typedef {Object} NotificationContextType
+ * @property {Notification[]} notifications - 알림 목록
+ */
 export const NotificationContext = createContext<
   NotificationContextType | undefined
 >(undefined);
