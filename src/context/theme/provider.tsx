@@ -2,10 +2,11 @@ import { useMemo, useState } from "react";
 import { ThemeContext } from ".";
 
 /**
- * @author
- * @function @
- **/
-
+ * @title ThemeProvider
+ * @description ThemeProvider는 테마를 관리하는 Context Provider입니다.
+ * @param param0 - children
+ * @returns
+ */
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
