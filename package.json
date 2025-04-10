@@ -21,7 +21,7 @@
     "test:advanced": "vitest advanced",
     "test:ui": "vitest --ui",
     "prepare": "husky",
-    "deploy": "pnpm build && pnpx gh-pages -d dist"
+    "predeploy": "pnpm run build"
   },
   "dependencies": {
     "react": "^18.3.1",
